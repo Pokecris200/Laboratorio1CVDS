@@ -14,11 +14,11 @@
 
    > ¡Sólo los que están preparados para morir deberían tener el poder de matar!
 
-+ **Lugares que deseo Visitar: **
++ **Lugares que deseo Visitar:**
 
 ![](https://media.istockphoto.com/photos/aerial-view-of-tokyo-cityscape-with-fuji-mountain-in-japan-picture-id1131743616?k=6&m=1131743616&s=612x612&w=0&h=9NMsEs972mKE1QS1eDkN7I_nMoYyfLk_N9gtmvB07kc=)
    
-    1. Japon  
+    1. Japón  
    
 ![](https://canalhistoria.es/wp-content/uploads/2018/06/rusia.jpg)
    
@@ -28,27 +28,29 @@
    
     3. Alemania  
 
-## **Codigo Ultra-Quicksort**  
+## **Code Ultra-Quicksort**  
 
 
 	from sys import stdin
 	
 	def mezclar(arreglo,inicio,mitad,final):
 	
-		 Funcion que cuenta el numero de cambios al rodenar un arreglo
+		 """Funcion que cuenta el numero de cambios al rodenar un arreglo
 		 Args:
 			 arreglo: arreglo de enteros
 			 inicio: entero
 			 mitad: entero
 			 final: entero
 		 Returns:
-			 Numero de cambios para ordenar arreglo
+			 Numero de cambios para ordenar arreglo"""
+			 
 		 iterador_izquierda,iterador_derecha,cambios = 0,0,0
 		 parte_izquierda = arreglo[inicio:mitad+1]
 		 parte_derecha = arreglo[mitad+1:final+1]
 		 cambios = 0
 		 parte_izquierda.append(1E9)
-		 parte_derecha.append(1E9)     
+		 parte_derecha.append(1E9)  
+		 
 		 for k in range(inicio,final+1):
 			 if parte_izquierda[iterador_izquierda] <= parte_derecha[iterador_derecha]:
 				 arreglo[k] = parte_izquierda[iterador_izquierda]
