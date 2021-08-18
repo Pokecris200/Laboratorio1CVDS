@@ -8,7 +8,7 @@
 
 + **Ciudad de Nacimiento:** Tame, Arauca
 
-+ **Lugar donde estudio:** [Escuela Colombiana de Ingenieria Julio Garavito](https://www.escuelaing.edu.co/es/)
++ **Lugar donde estudio:** [Escuela Colombiana de Ingenieria Julio Garavito](https://www.escuelaing.edu.co/es/)  
 
 + **Frase Favorita:**
 
