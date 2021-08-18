@@ -31,50 +31,49 @@
 ## **Codigo Ultra-Quicksort**  
 
 
-‛‛‛
-from sys import stdin
+	from sys import stdin
+	
+	def mezclar(arreglo,inicio,mitad,final):
+	
+		 Funcion que cuenta el numero de cambios al rodenar un arreglo
+		 Args:
+			 arreglo: arreglo de enteros
+			 inicio: entero
+			 mitad: entero
+			 final: entero
+		 Returns:
+			 Numero de cambios para ordenar arreglo
+		 iterador_izquierda,iterador_derecha,cambios = 0,0,0
+		 parte_izquierda = arreglo[inicio:mitad+1]
+		 parte_derecha = arreglo[mitad+1:final+1]
+		 cambios = 0
+		 parte_izquierda.append(1E9)
+		 parte_derecha.append(1E9)     
+		 for k in range(inicio,final+1):
+			 if parte_izquierda[iterador_izquierda] <= parte_derecha[iterador_derecha]:
+				 arreglo[k] = parte_izquierda[iterador_izquierda]
+				 iterador_izquierda = iterador_izquierda + 1
+			 else:
+				 arreglo[k] = parte_derecha[iterador_derecha]
+				 iterador_derecha = iterador_derecha + 1
+				 cambios = cambios + mitad - inicio - iterador_izquierda + 1
+		 return cambios
 
-def mezclar(arreglo,inicio,mitad,final):
-     Funcion que cuenta el numero de cambios al rodenar un arreglo
-     Args:
-         arreglo: arreglo de enteros
-         inicio: entero
-         mitad: entero
-         final: entero
-     Returns:
-         Numero de cambios para ordenar arreglo
-         
-     iterador_izquierda,iterador_derecha,cambios = 0,0,0
-     parte_izquierda = arreglo[inicio:mitad+1]
-     parte_derecha = arreglo[mitad+1:final+1]
-     cambios = 0
-     parte_izquierda.append(1E9)
-     parte_derecha.append(1E9)     
-     for k in range(inicio,final+1):
-         if parte_izquierda[iterador_izquierda] <= parte_derecha[iterador_derecha]:
-             arreglo[k] = parte_izquierda[iterador_izquierda]
-             iterador_izquierda = iterador_izquierda + 1
-         else:
-             arreglo[k] = parte_derecha[iterador_derecha]
-             iterador_derecha = iterador_derecha + 1
-             cambios = cambios + mitad - inicio - iterador_izquierda + 1
-     return cambios
+	def mergesort(arreglo,inicio,final):
+		cambios = 0
+		if inicio < final:
+			mitad = (inicio + final)//2
+			#Mezclamos las 2 mitades del arreglo y contamos cuantos cambios se realizan
+			cambios=mergesort(arreglo,inicio,mitad) + mergesort(arreglo,mitad+1,final) + mezclar(arreglo,inicio,mitad,final)
+		return cambios
 
-def mergesort(arreglo,inicio,final):
-    cambios = 0
-    if inicio < final:
-        mitad = (inicio + final)//2
-        #Mezclamos las 2 mitades del arreglo y contamos cuantos cambios se realizan
-        cambios=mergesort(arreglo,inicio,mitad) + mergesort(arreglo,mitad+1,final) + mezclar(arreglo,inicio,mitad,final)
-    return cambios
-
-def main():
-    while True:
-        cantidad_numeros = int(stdin. readline().strip())
-        if cantidad_numeros == 0:
-            break
-        arreglo = []
-        for i in range(cantidad_numeros):
-            arreglo.append(int(stdin.readline().strip()))
-        print(mergesort(arreglo,0,cantidad_numeros-1))        
-main()
+	def main():
+		while True:
+			cantidad_numeros = int(stdin. readline().strip())
+			if cantidad_numeros == 0:
+				break
+			arreglo = []
+			for i in range(cantidad_numeros):
+				arreglo.append(int(stdin.readline().strip()))
+			print(mergesort(arreglo,0,cantidad_numeros-1))        
+	main()
