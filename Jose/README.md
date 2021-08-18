@@ -2,39 +2,39 @@
 
 ## Datos Básicos
 
-+ **Edad: ** 20 años
++ **Edad:** 20 años
 
-+ **Fecha de Nacimiento: ** 08-11-2000
++ **Fecha de Nacimiento:** 08-11-2000
 
-+ **Ciudad de Nacimiento: ** Tame, Arauca
++ **Ciudad de Nacimiento:** Tame, Arauca
 
-+ **Lugar donde estudio: ** [Escuela Colombiana de Ingenieria Julio Garavito](https://www.escuelaing.edu.co/es/)
++ **Lugar donde estudio:** [Escuela Colombiana de Ingenieria Julio Garavito](https://www.escuelaing.edu.co/es/)
 
-+ **Frase FAvorita: **
++ **Frase Favorita:**
 
-> ¡Sólo los que están preparados para morir deberían tener el poder de matar!
+   > ¡Sólo los que están preparados para morir deberían tener el poder de matar!
 
 + **Lugares que deseo Visitar: **
 
-   ![](https://media.istockphoto.com/photos/aerial-view-of-tokyo-cityscape-with-fuji-mountain-in-japan-picture-id1131743616?k=6&m=1131743616&s=612x612&w=0&h=9NMsEs972mKE1QS1eDkN7I_nMoYyfLk_N9gtmvB07kc=)
+![](https://media.istockphoto.com/photos/aerial-view-of-tokyo-cityscape-with-fuji-mountain-in-japan-picture-id1131743616?k=6&m=1131743616&s=612x612&w=0&h=9NMsEs972mKE1QS1eDkN7I_nMoYyfLk_N9gtmvB07kc=)
    
-   1. Japon
+    1. Japon  
    
-   ![](https://canalhistoria.es/wp-content/uploads/2018/06/rusia.jpg)
+![](https://canalhistoria.es/wp-content/uploads/2018/06/rusia.jpg)
    
-   1. Rusia
+    2. Rusia  
    
-   ![](https://www.deutschland.de/sites/default/files/styles/crop_cover_top/public/media/image/Spezialseite_Pillarpage_Wegweiser_20102020_0.jpg?itok=E6U8K_KV)
+![](https://www.deutschland.de/sites/default/files/styles/crop_cover_top/public/media/image/Spezialseite_Pillarpage_Wegweiser_20102020_0.jpg?itok=E6U8K_KV)
    
-   1. Alemania
+    3. Alemania  
 
-## **Codigo Ultra-Quicksort** 
+## **Codigo Ultra-Quicksort**  
+
 
 ‛‛‛
 from sys import stdin
 
 def mezclar(arreglo,inicio,mitad,final):
-     """
      Funcion que cuenta el numero de cambios al rodenar un arreglo
      Args:
          arreglo: arreglo de enteros
@@ -44,7 +44,6 @@ def mezclar(arreglo,inicio,mitad,final):
      Returns:
          Numero de cambios para ordenar arreglo
          
-     """
      iterador_izquierda,iterador_derecha,cambios = 0,0,0
      parte_izquierda = arreglo[inicio:mitad+1]
      parte_derecha = arreglo[mitad+1:final+1]
@@ -79,5 +78,3 @@ def main():
             arreglo.append(int(stdin.readline().strip()))
         print(mergesort(arreglo,0,cantidad_numeros-1))        
 main()
-
-‛‛‛
