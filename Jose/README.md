@@ -88,4 +88,4 @@
 
 ### Remote
 
-![]()
+![](https://github.com/Pokecris200/Laboratorio1CVDS/blob/master/Jose/Remote%20completo.PNG)
