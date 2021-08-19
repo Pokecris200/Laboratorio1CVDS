@@ -79,3 +79,13 @@
 				arreglo.append(int(stdin.readline().strip()))
 			print(mergesort(arreglo,0,cantidad_numeros-1))        
 	main()
+	
+## Learn Git Branching
+
+### Main
+
+![](https://github.com/Pokecris200/Laboratorio1CVDS/blob/master/Jose/Main%20completo.PNG)
+
+### Remote
+
+![]()
